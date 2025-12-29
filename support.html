@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Hydration Daily</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #E0F2FE 0%, #DBEAFE 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #3B82F6;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #6B7280;
+            font-size: 1.1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: #1E40AF;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #DBEAFE;
+        }
+        h3 {
+            color: #374151;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+        p {
+            margin-bottom: 16px;
+            color: #4B5563;
+        }
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #4B5563;
+        }
+        .contact-card {
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            color: white;
+            text-align: center;
+        }
+        .contact-card h2 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.3);
+        }
+        .contact-card p {
+            color: rgba(255,255,255,0.9);
+        }
+        .email-button {
+            display: inline-block;
+            background: white;
+            color: #3B82F6;
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+        .faq-item {
+            border-bottom: 1px solid #E5E7EB;
+            padding: 16px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            color: #1F2937;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .faq-answer {
+            color: #6B7280;
+            margin-bottom: 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .feature-item {
+            background: #F3F4F6;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .feature-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 4px;
+        }
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #6B7280;
+        }
+        a {
+            color: #3B82F6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3B82F6;
+        }
+        .response-time {
+            background: #ECFDF5;
+            color: #059669;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 16px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <div class="header">
+            <div class="logo">💧</div>
+            <h1>Support Center</h1>
+            <p class="subtitle">We're here to help you stay hydrated!</p>
+        </div>
+
+        <div class="card contact-card">
+            <h2>Contact Us</h2>
+            <p>Have a question, suggestion, or need help? We'd love to hear from you!</p>
+            <a href="mailto:calvinapps.dev@gmail.com" class="email-button">
+                Email Support
+            </a>
+            <div class="response-time">
+                Typical response time: Within 24-48 hours
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I change my daily water goal?</p>
+                <p class="faq-answer">Go to Settings > Daily Goal and adjust the slider or enter your preferred amount. The app will automatically update your progress tracking.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do notifications work?</p>
+                <p class="faq-answer">You can customize reminder frequency and times in Settings > Reminders. The app will send friendly notifications throughout your chosen hours to remind you to drink water.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I track drinks other than water?</p>
+                <p class="faq-answer">Yes! Tap the "Change Drink" button on the home screen to select from various beverages like coffee, tea, juice, and more. Each drink type is tracked separately in your history.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I cancel my premium subscription?</p>
+                <p class="faq-answer">Subscriptions are managed through your device's app store. On iOS, go to Settings > Apple ID > Subscriptions. On Android, go to Google Play Store > Subscriptions.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is my data backed up?</p>
+                <p class="faq-answer">Currently, all data is stored locally on your device. We recommend keeping your device backed up through iCloud or Google backup services.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How does weather-based adjustment work?</p>
+                <p class="faq-answer">If you enable location access, the app can suggest increased hydration on hot or humid days. This is optional and your location is only used for weather queries - it's never stored.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">What is Habit Stacking?</p>
+                <p class="faq-answer">Habit Stacking links drinking water to activities you already do (like brushing teeth or having meals). When you complete these routines, tap to log water - building hydration into your existing habits!</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I reset my data?</p>
+                <p class="faq-answer">Go to Settings and scroll down to find the reset option. Please note this action cannot be undone.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>App Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-title">Track Progress</div>
+                    <div class="feature-desc">Daily, weekly & monthly stats</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔔</div>
+                    <div class="feature-title">Smart Reminders</div>
+                    <div class="feature-desc">Customizable notifications</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <div class="feature-title">Achievements</div>
+                    <div class="feature-desc">Earn badges & rewards</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔥</div>
+                    <div class="feature-title">Streaks</div>
+                    <div class="feature-desc">Build consistent habits</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌤️</div>
+                    <div class="feature-title">Weather Adjust</div>
+                    <div class="feature-desc">Smart goal suggestions</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">😊</div>
+                    <div class="feature-title">Mood Tracking</div>
+                    <div class="feature-desc">See hydration's impact</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Troubleshooting</h2>
+
+            <h3>Notifications not working?</h3>
+            <ul>
+                <li>Check that notifications are enabled in your device settings</li>
+                <li>Make sure "Do Not Disturb" mode is off during reminder hours</li>
+                <li>Try toggling reminders off and on in app settings</li>
+            </ul>
+
+            <h3>App running slowly?</h3>
+            <ul>
+                <li>Close and reopen the app</li>
+                <li>Make sure you're running the latest version</li>
+                <li>Restart your device if issues persist</li>
+            </ul>
+
+            <h3>Purchase not recognized?</h3>
+            <ul>
+                <li>Try the "Restore Purchases" button on the upgrade screen</li>
+                <li>Make sure you're signed into the same App Store/Play Store account</li>
+                <li>Contact us if the issue persists</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Legal</h2>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Hydration Daily by Calvin Apps. All rights reserved.</p>
+            <p style="margin-top: 8px;">Version 1.0.0</p>
+        </div>
+    </div>
+</body>
+</html>
